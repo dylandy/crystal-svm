@@ -1,0 +1,9 @@
+name: crystal-svm
+version: 0.1.0
+
+authors:
+  - dylandy.chang <dylandy.chang@gmail.com>
+
+crystal: 0.20.4
+
+license: MIT
