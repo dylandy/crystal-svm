@@ -65,12 +65,12 @@ lib LibSVM
   fun svm_get_svr_probability(model : Svm_model*) : LibC::Double
   fun svm_predict_values(model : Svm_model*, x : Svm_node*, dec_values : LibC::Double*) : LibC::Double
   fun svm_predict_probability(model : Svm_model*, x : Svm_node*, prob_estimates : LibC::Double*) : LibC::Double
-  fun svm_check_parameter(prob : Svm_problem*, param : Svm_parameter*) : String
+  fun svm_check_parameter(prob : Svm_problem*, param : Svm_parameter*) : Char* 
   fun svm_check_probability_model(model : Svm_model*) : Int32
-  fun svm_save_model(model_file_name : String, model : Svm_model*) : Int32
-  fun svm_load_model(model_file_name : String) : Svm_model*
+  fun svm_save_model(model_file_name : Char*, model : Svm_model*) : Int32
+  fun svm_load_model(model_file_name : Char*) : Svm_model*
   fun svm_free_model_content(model_ptr : Svm_model*) : Void
   fun svm_free_and_destroy_model(model_ptr_ptr : Svm_model**) : Void
   fun svm_destroy_param(param : Svm_parameter*) : Void
-  fun svm_set_print_string_function(print_func : Pointer(T) | String) : Void
+  fun svm_set_print_string_function(print_func : Pointer(Char*)) : Void
 end
