@@ -17,11 +17,9 @@ dependencies:
 require "crystal-svm"
 ```
 
-TODO: Write usage instructions here
 
 ## Development
 
-TODO: Write development instructions here
 
 ## Contributing
 

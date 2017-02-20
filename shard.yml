@@ -4,6 +4,10 @@ version: 0.1.0
 authors:
   - dylandy.chang <dylandy.chang@gmail.com>
 
+dependencies:
+  gsl:
+    github: ruivieira/crystal-gsl
+
 crystal: 0.20.4
 
 license: MIT
